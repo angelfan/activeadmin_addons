@@ -11,6 +11,8 @@ addons:
   apt:
     packages:
     - chromium-chromedriver
+before_script:
+  - export PATH=$PATH:/usr/lib/chromium-browser/
 deploy:
   provider: rubygems
   api_key:
