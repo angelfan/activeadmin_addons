@@ -8,8 +8,9 @@ script:
   - cd ../.. && bundle exec rspec spec
 addons:
   chrome: stable
-before_install:
-  google-chrome-stable --headless --disable-gpu --remote-debugging-port=9222 http://localhost &
+  apt:
+    packages:
+    - chromedriver
 deploy:
   provider: rubygems
   api_key:
