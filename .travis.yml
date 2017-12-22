@@ -10,7 +10,7 @@ addons:
   chrome: stable
   apt:
     packages:
-    - chromedriver
+    - chromium-chromedriver
 deploy:
   provider: rubygems
   api_key:
